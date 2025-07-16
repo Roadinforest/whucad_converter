@@ -1,4 +1,3 @@
-# C:\CATIA_Converter\convert_h5_to_catpart.py
 import win32com.client
 import h5py
 import argparse
