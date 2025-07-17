@@ -2,15 +2,9 @@ import win32com.client
 import h5py
 import argparse
 import os
-import sys
-
-# --- 关键：将当前目录添加到 Python 路径 ---
-# 这能确保脚本可以找到我们复制过来的 whucad_lib 包
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # --- 从 whucad_lib 中导入必要的模块 ---
 from whucad_lib.cadlib.CAD_Class import Macro_Seq
-# create_CAD_CATIA 函数在 CAD_utils.py 中
 from whucad_lib.cadlib.Catia_utils import create_CAD_CATIA
 
 

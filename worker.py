@@ -17,8 +17,8 @@ from whucad_lib.cadlib.Catia_utils import create_CAD_CATIA
 
 # --- 配置 ---
 # !! 重要：这里的 IP 地址必须是你 Linux 主机的局域网 IP !!
-SERVER_URL = "http://192.168.169.37:8000"  # <--- 示例 IP，请务必修改为你的 Linux 主机 IP
-API_KEY = "your_super_secret_key_12345"  # <--- 必须与 Django settings.py 中的一致
+SERVER_URL = "http://192.168.169.37:8000"  # <--- 修改为你的 Linux 主机 IP
+API_KEY = "your_super_secret_key_12345"  # <--- 与Linux后端Django 中settings.py 中的一致
 POLL_INTERVAL = 5  # 每 5 秒轮询一次
 
 
