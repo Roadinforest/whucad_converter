@@ -6,6 +6,7 @@ import time
 import requests
 import traceback
 
+# Windows上用于连接Linux后端的重要逻辑文件
 # --- 关键：将当前目录和 whucad_lib 目录添加到 Python 路径 ---
 # 这能确保脚本可以找到我们复制过来的 whucad_lib 包
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -20,8 +21,6 @@ from whucad_lib.cadlib.Catia_utils import create_CAD_CATIA
 SERVER_URL = "http://192.168.169.37:8000"  # <--- 修改为你的 Linux 主机 IP
 API_KEY = "your_super_secret_key_12345"  # <--- 与Linux后端Django 中settings.py 中的一致
 POLL_INTERVAL = 5  # 每 5 秒轮询一次
-
-
 # --- 配置结束 ---
 
 def process_task(task):
